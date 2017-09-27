@@ -1,0 +1,21 @@
+<ion-view title="{{data.pageTitle}}" id="page24" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="finishedChoresByKid-list14">
+      <ion-item class="item-divider" id="finishedChoresByKid-list-item-divider9"> Completed Chores</ion-item>
+    </ion-list>
+    <div id="finishedChoresByKid-container18">
+      <ion-list id="finishedChoresByKid-list13">
+        <ion-item class="item-icon-left dark" id="finishedChoresByKid-list-item24" ui-sref="choreDetail({&quot;kidid&quot;:&quot;&quot;+data.kid_id+&quot;&quot;,&quot;kidusername&quot;:&quot;&quot;+data.kid_un+&quot;&quot;,&quot;parent_uid&quot;:&quot;&quot;+data.parent_uid+&quot;&quot;,&quot;kidvc_name&quot;:&quot;&quot;+data.kid_vc_name+&quot;&quot;,&quot;chore_id&quot;:&quot;&quot;+item.$id+&quot;&quot;})"
+          ng-repeat="item in items" ng-show="item.status==true">
+          <i class="icon ion-android-checkbox-outline"></i>
+          <b>{{item.title}}</b>
+          <br>
+          <b>Payout:</b> {{item.payout}} {{data.kid_vc_name}}
+          <br>{{item.description}}
+          <br>
+          <em>Added on {{item.datetime_created | date:'medium'}}</em>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

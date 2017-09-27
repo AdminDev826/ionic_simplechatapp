@@ -1,0 +1,15 @@
+<ion-view title="Marketplace Items" id="page27" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="marketplaceItems-list15">
+      <ion-item class="item-thumbnail-left calm" id="marketplaceItems-list-item16" ui-sref="marketplaceItemDetail({&quot;storeItemId&quot;:&quot;&quot;+storeItem.$id+&quot;&quot;})" ng-repeat="storeItem in storeItems" ng-src="{{storeItem.img_url}}">
+        <h2calm>
+          <b>{{storeItem.name}}</b>
+          <p>
+            <b>Kid price: </b>{{storeItem.price_kid}}
+            <br>
+            <b>Category: </b>{{storeItem.category}}</p>
+        </h2calm>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

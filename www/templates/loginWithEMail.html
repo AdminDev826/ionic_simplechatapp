@@ -1,0 +1,23 @@
+<ion-view title="Login with E-mail" id="page6" style="background-color:#000000;">
+  <ion-content padding="true" style="background: url(img/1YP9pZxOTcq9l931dBLp_bg_pirate_ship.png) no-repeat center;background-size:cover;" class="has-header">
+    <form id="loginWithEMail-form2" class="list marginTop10">
+      <ion-list id="loginWithEMail-list2">
+        <label class="item item-input marginTop15 field_email" id="loginWithEMail-input5" name="email">
+          <span class="input-label">E-mail</span>
+          <input type="email" placeholder="E-mail" ng-model="data.email">
+        </label>
+        <label class="item item-input marginTop1 field_password" id="loginWithEMail-input6" name="password">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="Password" ng-model="data.password">
+        </label>
+      </ion-list>
+      <button id="loginWithEMail-button11" ng-click="loginWithEmail()" style="color:#FFFFFF;" class="button button-royal button-large button-block fredoka">Login</button>
+      <div id="loginWithEMail-markdown13" ng-click="openPasswordReset()" style="text-align:center;" class="show-list-numbers-and-dots marginTop15">
+        <p style="color:#FFFFFF;font-size:16px;">Reset Password?</p>
+      </div>
+    </form>
+    <div id="loginWithEMail-markdown14" style="text-align:center;" class="show-list-numbers-and-dots marginTop5">
+      <p style="color:#E74C3C;font-size:17px;">{{data.error}}</p>
+    </div>
+  </ion-content>
+</ion-view>

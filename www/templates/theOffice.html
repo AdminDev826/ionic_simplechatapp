@@ -1,0 +1,16 @@
+<ion-view title="The Office" id="page20" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <div id="theOffice-container15">
+      <ion-list id="theOffice-list8">
+        <ion-item class="item-avatar item-icon-right energized" id="theOffice-list-item11" ui-sref="choresByKid({&quot;kidid&quot;:&quot;&quot;+kid.$id+&quot;&quot;,&quot;kidusername&quot;:&quot;&quot;+kid.username+&quot;&quot;,&quot;parent_uid&quot;:&quot;&quot;+kid.parent_uid+&quot;&quot;,&quot;kidvc_name&quot;:&quot;&quot;+kid.vc_name+&quot;&quot;})"
+          ng-repeat="kid in kids" ng-src="{{kid.avatar_url}}">
+          <h2energized>
+            <b>{{kid.username}}</b>
+            <p style="white-space:normal;">{{kid.vc_balance_snapshot}} {{kid.vc_name}}</p>
+            <i class="icon ion-android-arrow-dropright-circle"></i>
+          </h2energized>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

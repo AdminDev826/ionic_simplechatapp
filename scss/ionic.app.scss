@@ -1,23 +1,474 @@
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
-
-For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
-
-// The path for our ionicons font files, relative to the built CSS in www/css
+$energized: #F3BF04;
+$balanced: #75C24B;
+$positive: #448FD0;
+$calm: #74D8E6;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+@import url('https: //fonts.googleapis.com/css?family=Fredoka+One');
+//tablets
+@media screen and (min-width: 768px) {
+	.goldenpear_nyop {
+		font-size: 23pt !important;
+		padding-top: 250px !important;
+		padding-bottom: 110px !important;
+	}
+	
+	.redapple_nyop {
+		font-size: 23pt !important;
+		padding-top: 170px !important;
+	}
+	
+	.liHeight li {
+		line-height: 35px !important;
+	}
+	
+	.serviceIncludes {
+		height: 380px !important;
+	}
+	
+	.serviceIncludes2 {
+		margin-top: 20px !important;
+		height: 440px !important;
+	}
+	
+	.popTown {
+		width: 1229px !important;
+	}
+	
+	.hudContainer {
+		padding: 2.5% 1% 0 8% !important;
+	}
+	
+}
+.fredoka {
+	font-family: 'Fredoka One', cursive;
+}
 
-// Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+.logo_onboarding {
+	margin-top: 5%;
+}
+
+.btn_green_signup {
+	margin-top: 25%;
+}
+
+.btn_social {
+	margin: 23px;
+}
+
+.marginPadding0 {
+	padding-top: 0px !important;
+}
+
+.marginTop0 {
+	margin-top: 0px !important;
+}
+
+.marginTop1 {
+	margin-top: 1% !important;
+}
+
+.marginTop3 {
+	margin-top: 3% !important;
+}
+
+.marginTop5 {
+	margin-top: 5% !important;
+}
+
+.marginTop10 {
+	margin-top: 10% !important;
+}
+
+.marginTop15 {
+	margin-top: 15% !important;
+}
+
+.marginTop20 {
+	margin-top: 20% !important;
+}
+
+.marginTop25 {
+	margin-top: 25% !important;
+}
+
+.marginTop30 {
+	margin-top: 30% !important;
+}
+
+.marginTop35 {
+	margin-top: 35% !important;
+}
+
+.marginTop40 {
+	margin-top: 40% !important;
+}
+
+.marginTop45 {
+	margin-top: 45% !important;
+}
+
+.marginTop50 {
+	margin-top: 50% !important;
+}
+
+.marginTop55 {
+	margin-top: 55% !important;
+}
+
+.marginTop60 {
+	margin-top: 60% !important;
+}
+
+.marginTop65 {
+	margin-top: 65% !important;
+}
+
+.learnMore {
+	width: 50% !important;
+}
+
+.width50 {
+	width: 50% !important;
+}
+
+.centerAlign {
+	margin: 0 auto !important;
+}
+
+.pull_right {
+	float: right !important;
+}
+
+.pull_left {
+	float: left !important;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.warning_message {
+	display: none;
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	height: 300%;
+	width: 120%;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	padding: 10%;
+	margin-left: -10%;
+	margin-top: -50px;
+}
+
+@media only screen and (orientation: portrait) {
+	.warning_message {
+		display: block;
+	}
+	
+}
+@media only screen and (orientation: landscape) {
+	.warning_message {
+		display: none;
+	}
+	
+}
+.mediumFont {
+	font-size: 18px !important;
+}
+
+.marginBottom1 {
+	margin-bottom: 1% !important;
+}
+
+.marginBottom5 {
+	margin-bottom: 5% !important;
+}
+
+.halfWidth {
+	width: 50% !important;
+}
+
+.marginLeft1 {
+	margin-left: 1% !important;
+}
+
+.marginLeft3 {
+	margin-left: 3% !important;
+}
+
+.marginLeft5 {
+	margin-left: 5% !important;
+}
+
+.item-divider {
+	background-color: transparent !important;
+	padding-left: 15px;
+	border: none;
+}
+
+.center_select item {
+	text-align: center !important;
+	text-align-last: center;
+}
+
+.text-white {
+	color: white !important;
+}
+
+.goldenpear_nyop {
+	background: none;
+	background-image: url("https: //firebasestorage.googleapis.com/v0/b/gb-board.appspot.com/o/images%2Fionic_app_img_storage%2Fgolden_pear_container.png?alt=media&token=5b77f6bb-8256-4581-a67e-d83218cf9c02") !important;
+	background-repeat: no-repeat;
+	background-size: 90% auto;
+	background-position: center top;
+	padding: 120px 15px 68px 15px;
+}
+
+.scaleText {
+	font-size: 100% !important;
+}
+
+.largerText {
+	font-size: 22pt !important;
+}
+
+.divCenter {
+	margin: 0 auto;
+}
+
+.redapple_nyop {
+	background: none;
+	background-image: url("https: //firebasestorage.googleapis.com/v0/b/gb-board.appspot.com/o/images%2Fionic_app_img_storage%2Fred_apple_container.png?alt=media&token=794ab2e6-f39a-428a-a6a5-1b901cdfc6bf") !important;
+	background-repeat: no-repeat;
+	background-size: 80% auto;
+	background-position: center top;
+	padding-top: 68px;
+	margin-top: 0px;
+	padding-bottom: 40px;
+}
+
+.liHeight li {
+	line-height: 17px;
+}
+
+ul.serviceIncludes li: before, ul.serviceIncludes2 li: before {
+	content: '✓';
+	padding-right: 5px;
+}
+
+.serviceIncludes {
+	height: 150px;
+	-webkit-overflow-scrolling: touch !important;
+	overflow: scroll !important;
+	padding-left: 1% !important;
+	padding-right: 3% !important;
+	width: 57%;
+	margin: 0 auto;
+}
+
+.serviceIncludes2 {
+	height: 160px;
+	-webkit-overflow-scrolling: touch !important;
+	overflow: scroll !important;
+	padding-left: 1% !important;
+	padding-right: 3% !important;
+	width: 65%;
+	margin: 0 auto;
+}
+
+.paperBg {
+	background-image: url("https: //firebasestorage.googleapis.com/v0/b/gb-board.appspot.com/o/images%2Fionic_app_img_storage%2Fpaper_note_with_tape.png?alt=media&token=a1b18475-da93-44c5-b4c3-140b18ce503c") !important;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.paperPadding {
+	padding: 16% 15% 5% 18%;
+}
+
+.goldenPear {
+	max-width: 1071px;
+}
+
+.nyop_input_field {
+	margin: 0 auto;
+	max-width: 240px;
+	border-radius: 6px;
+}
+
+.width80 {
+	width: 80% !important;
+}
+
+.btn_plan_select1 {
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.whiteBackground {
+	background: #FFFFFF !important;
+}
+
+.noPadding {
+	padding: 0px !important;
+}
+
+.noMargin {
+	margin: 0px !important;
+}
+
+div.vcBalanceSnapshot {
+	text-align: center !important;
+	padding-top: 23px;
+	padding-bottom: 8px !important;
+	margin-bottom: 0px !important;
+}
+
+.vcBalanceSnapshotLabel {
+	font-size: 23pt !important;
+	font-weight: bold !important;
+}
+
+.badge {
+	border-radius: 50% !important;
+	border: 1px dashed white !important;
+	margin-top: -35px !important;
+}
+
+.btn-warning {
+	color: #ffffff;
+	background-color: #f1c40f;
+}
+
+.shine-me {
+	width: 24px;
+	/*Make sure the animation is over the whole element*/
+	    -webkit-animation-name: ShineAnimation;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: cubic-bezier(.12,.29,.98,.47);
+	/*  */
+	    animation-name: ShineAnimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(.12,.29,.98,.47);
+}
+
+@-webkit-keyframes ShineAnimation {
+	from {
+		background-repeat: no-repeat;
+		background-image: -webkit-linear-gradient(
+		            top left,
+		            rgba(255, 255, 255, 0.0) 0%,
+		            rgba(255, 255, 255, 0.0) 35%,
+		            rgba(255, 255, 255, 0.5) 48%,
+		            rgba(255, 255, 255, 0.8) 50%,
+		            rgba(255, 255, 255, 0.5) 52%,
+		            rgba(255, 255, 255, 0.0) 57%,
+		            rgba(255, 255, 255, 0.0) 100%
+		        );
+		background-position: -70px -70px;
+		background-size: 19px 20px}
+	to {
+		background-repeat: no-repeat;
+		background-position: 100px 100px;
+	}
+	
+}
+.poptown {
+	background-image: url('https: //firebasestorage.googleapis.com/v0/b/gb-board.appspot.com/o/images%2Fionic_app_img_storage%2Fbg_poptown_1229x922.png?alt=media&token=fb57c9ea-5a05-4413-b545-a606a4098f3c');
+	background-repeat: no-repeat;
+	width: 1229px;
+	height: 922px;
+}
+
+.ionscroll {
+	overflow: auto;
+	width: 1024px !important;
+	height: 768px !important;
+}
+
+.ion-scroll {
+	overflow: auto !important;
+}
+
+.backgroundNone {
+	background-image: none !important;
+	background: none !important;
+}
+
+.ionScrollContainer {
+	position: relative !important;
+}
+
+.hudContainer {
+	position: fixed !important;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	background: url('https: //firebasestorage.googleapis.com/v0/b/gb-board.appspot.com/o/images%2Fionic_app_img_storage%2Fhud_points_container_bg.png?alt=media&token=b0ead713-d602-4c09-a82d-e9d9a0073bc1') no-repeat;
+	background-size: 39% auto;
+	width: 533px;
+	height: 197px;
+	padding: 4% 1% 0 14%;
+	margin: 1%;
+	text-align: left;
+	font-size: 22pt;
+	color: #df9307;
+}
+
+.menuIcon {
+	position: fixed !important;
+	margin: 0 1% 1% 0;
+	bottom: 0px;
+	right: 0px;
+	z-index: 99;
+}
+
+.platform-ios.platform-cordova: not(.fullscreen) .has-header {
+	top: 0px;
+}
+
+.ionScrollCanvasContainer {
+	//overflow: auto !important;
+	width: 1331px !important;
+	height: 998px !important;
+	// 1331, 998 
+	    transform: translateZ(0);
+	//transform: translate3d(0, 0, 0);
+}
+
+.aboutUsTextContainer {
+	border-radius: 6px;
+	background: rgba(0, 0, 0, 0.5);
+	/* Green background with 50% opacity */
+	    padding: 4% !important;
+}
+
+ion-view,.pane,.view {
+	background-color: #F8F8F8;
+}
+
+body.platform-ios {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body.platform-android {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
 

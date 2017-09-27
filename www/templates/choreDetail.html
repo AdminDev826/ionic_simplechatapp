@@ -1,0 +1,22 @@
+<ion-view title="Chore Detail" id="page25" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <form id="choreDetail-form17" class="list">
+      <label class="item item-input" id="choreDetail-input20" name="title">
+        <span class="input-label">Title:</span>
+        <input type="text" placeholder="" value="{{item.title}}" ng-click="showSaveBtn()" ng-model="item.title">
+      </label>
+      <label class="item item-input" id="choreDetail-input21" name="payout">
+        <span class="input-label">Points payout:</span>
+        <input type="number" placeholder="" value="{{item.payout}}" min="1" max="5" ng-click="showSaveBtn()" ng-model="item.payout">
+      </label>
+      <label class="item item-input" id="choreDetail-textarea2" name="description">
+        <span class="input-label">Description</span><textarea placeholder="" ng-click="showSaveBtn()" rows="7" ng-model="item.description">{{item.description}}</textarea></label>
+      <button id="choreDetail-button21" ng-click="toggleFinished()" ng-show="item.status==false" class="button button-balanced button-block icon-left ion-ios-flag">This chore is finished</button>
+      <button id="choreDetail-button22" ng-click="toggleFinished()" ng-show="item.status==true" class="button button-assertive button-block icon-left ion-ios-flag-outline">This chore is not finished</button>
+      <button id="choreDetail-button23" ng-show="showSaveButton==true" ng-click="" class="button button-positive button-block icon-left ion-cash">Save changes</button>
+    </form>
+    <div id="choreDetail-markdown25" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Created on {{item.datetime_created | date:'medium'}}</p>
+    </div>
+  </ion-content>
+</ion-view>

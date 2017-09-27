@@ -1,0 +1,35 @@
+<ion-view title="Step 1" id="page10" ng-click="addLater()">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon No Icon"> Add Later</button>
+  </ion-nav-buttons>
+  <ion-content padding="true" style="background: url(img/38MWyNvBRSWr1HBLyf6i_bg_sky_grass.png) no-repeat center;background-size:cover;" class="has-header">
+    <h2 id="step1-heading3" style="color:#000000;text-align:center;" class="clearfix fredoka">Add a Kid</h2>
+    <form id="step1-form4" class="list" ng-submit="addKid()">
+      <ion-item class="item-divider fredoka" id="step1-list-item-divider2"> Kid username</ion-item>
+      <label class="item item-input" id="step1-input9" name="kidusername">
+        <input type="text" placeholder="SuperAwesomeKid" ng-model="data.kidusername" required="required">
+      </label>
+      <ion-item class="item-divider fredoka marginTop1" id="step1-list-item-divider1"> Top secret pin code</ion-item>
+      <label class="item item-input" id="step1-input11" name="kidpin">
+        <input type="number" placeholder="1234" ng-model="data.kidpin" max="9999" min="1000" required="required">
+      </label>
+      <ion-item class="item-divider fredoka marginTop1" id="step1-list-item-divider3"> Grade level</ion-item>
+      <label class="item item-select center_select" id="step1-select1" name="kidgrade">
+        <span class="input-label"></span>
+        <select ng-model="data.kidgrade">
+          <option>Pre-K (under 5)</option>
+          <option>Kindergarten (5-6)</option>
+          <option>1st Grade (6-7)</option>
+          <option>2nd Grade (7-8)</option>
+          <option>3rd Grade (8-9)</option>
+          <option>4th Grade (9-10)</option>
+          <option>5th Grade (10-11)</option>
+          <option>6th Grade (11-12)</option>
+          <option>7th Grade (12-13)</option>
+          <option>8th Grade (13-14)</option>
+        </select>
+      </label>
+    </form>
+    <button id="step1-button44" ng-click="addKid()" class="button button-positive button-block">Next</button>
+  </ion-content>
+</ion-view>

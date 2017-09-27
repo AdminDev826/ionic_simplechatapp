@@ -1,0 +1,22 @@
+<ion-view title="Parent Login" id="page5" style="background-color:#000000;">
+  <ion-content padding="true" style="background: url(img/RKtBonwsRDODByzTKTgx_bg_pirate_ship.png) no-repeat center;background-size:cover;" class="has-header">
+    <button id="parentLogin-button8" ng-click="signupWithFacebook()" style="font-size:23px;border-radius:6px 6px 6px 6px;" class="button button-positive button-large button-block icon-left ion-social-facebook fredoka marginTop5">Login with Facebook</button>
+    <div id="parentLogin-markdown9" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;">We will NOT post to your Facebook.</p>
+    </div>
+    <button id="parentLogin-button9" ng-click="signupWithGoogle()" style="font-size:23px;border-radius:6px 6px 6px 6px;" class="button button-energized button-large button-block icon-left ion-social-google fredoka">Login with Google</button>
+    <div id="parentLogin-markdown10" style="text-align:center;" class="show-list-numbers-and-dots marginTop5">
+      <p style="color:#FFFFFF;">or</p>
+    </div>
+    <a ui-sref="loginWithEMail()" id="parentLogin-button10" style="font-size:23px;border-radius:6px 6px 6px 6px;" class="button button-royal button-large button-block icon-left ion-email fredoka">Login with E-mail</a>
+    <div id="parentLogin-markdown11" style="text-align:center;" class="show-list-numbers-and-dots marginTop5">
+      <p style="color:#E74C3C;">{{data.error}}</p>
+    </div>
+    <div id="parentLogin-markdown12" style="text-align:center;" class="show-list-numbers-and-dots marginTop45">
+      <p style="color:#FFFFFF;">By logging in with one of the methods above,
+        <br>you agree with our
+        <a href="https://popchart.family/terms.html">Terms of Service</a> &amp;
+        <a href="https://popchart.family/privacy.html">Privacy Policy</a>.</p>
+    </div>
+  </ion-content>
+</ion-view>

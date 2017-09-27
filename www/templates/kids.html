@@ -1,0 +1,15 @@
+<ion-view title="Kids" id="page17" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <a ui-sref="addAKid()" id="kids-button13" class="button button-positive button-block icon-left ion-android-person-add fredoka">Add a kid</a>
+    <div id="kids-container13">
+      <ion-list id="kids-list7">
+        <ion-item class="item-avatar royal" id="kids-list-item10" ng-repeat="kid in kids" ng-src="{{kid.avatar_url}}">
+          <h2royal>
+            <b>{{kid.username}}</b>
+            <p style="white-space:normal;">{{kid.vc_balance_snapshot}} {{kid.vc_name}}</p>
+          </h2royal>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

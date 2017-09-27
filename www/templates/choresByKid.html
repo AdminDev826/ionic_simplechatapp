@@ -1,0 +1,26 @@
+<ion-view title="{{data.pageTitle}}" id="page16" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="choresByKid-card22">
+      <div id="choresByKid-button-bar6" style="background-color: none !important;" class="button-bar">
+        <button id="choresByKid-button29" ng-click="showModal()" style="color:#FFFFFF;border-radius:0px 0px 0px 0px;" class="button button-balanced button-block">Add a Chore</button>
+        <a ui-sref="finishedChoresByKid({&quot;kidid&quot;:&quot;&quot;+data.kid_id+&quot;&quot;,&quot;kidusername&quot;:&quot;&quot;+data.kid_un+&quot;&quot;,&quot;parent_uid&quot;:&quot;&quot;+data.parent_uid+&quot;&quot;,&quot;kidvc_name&quot;:&quot;&quot;+data.kid_vc_name+&quot;&quot;})"
+          id="choresByKid-button30" style="border-radius:0px 0px 0px 0px;" class="button button-calm button-block">See Completed</a>
+      </div>
+    </div>
+    <div id="choresByKid-container16">
+      <ion-list id="choresByKid-list12">
+        <ion-item class="item-divider" id="choresByKid-list-item-divider15"> Current Chores</ion-item>
+        <ion-item class="item-icon-left dark" id="choresByKid-list-item15" ui-sref="choreDetail({&quot;kidid&quot;:&quot;&quot;+data.kid_id+&quot;&quot;,&quot;kidusername&quot;:&quot;&quot;+data.kid_un+&quot;&quot;,&quot;parent_uid&quot;:&quot;&quot;+data.parent_uid+&quot;&quot;,&quot;kidvc_name&quot;:&quot;&quot;+data.kid_vc_name+&quot;&quot;,&quot;chore_id&quot;:&quot;&quot;+item.$id+&quot;&quot;})"
+          ng-repeat="item in items" ng-show="item.status==false">
+          <i class="icon ion-android-checkbox-outline-blank"></i>
+          <b>{{item.title}}</b>
+          <br>
+          <b>Payout:</b> {{item.payout}} {{data.kid_vc_name}}
+          <br>{{item.description}}
+          <br>
+          <em>Added on {{item.datetime_created | date:'medium'}}</em>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

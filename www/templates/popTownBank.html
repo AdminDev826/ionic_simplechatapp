@@ -1,0 +1,17 @@
+<ion-view title="PopTown Bank" id="page22" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <div id="popTownBank-container17">
+      <h4 id="popTownBank-heading10" style="text-align:center;">Bank accounts</h4>
+      <ion-list id="popTownBank-list9">
+        <ion-item class="item-avatar item-icon-right positive" id="popTownBank-list-item14" ui-sref="pointsByKid({&quot;kidid&quot;:&quot;&quot;+kid.$id+&quot;&quot;,&quot;kidusername&quot;:&quot;&quot;+kid.username+&quot;&quot;,&quot;kidvc_name&quot;:&quot;&quot;+kid.vc_name+&quot;&quot;,&quot;parent_uid&quot;:&quot;&quot;+kid.parent_uid+&quot;&quot;,&quot;kidvc_balance_snapshot&quot;:&quot;&quot;+kid.vc_balance_snapshot+&quot;&quot;,&quot;kidavatar_url&quot;:&quot;&quot;+kid.avatar_url+&quot;&quot;})"
+          ng-repeat="kid in kids" ng-src="{{kid.avatar_url}}">
+          <h2positive>
+            <b>{{kid.username}}</b>
+            <p style="white-space:normal;">{{kid.vc_balance_snapshot}} {{kid.vc_name}}</p>
+            <i class="icon ion-android-arrow-dropright-circle"></i>
+          </h2positive>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

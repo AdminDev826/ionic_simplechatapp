@@ -1,0 +1,35 @@
+<ion-view title="Marketplace Item Detail" id="page28" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="marketplaceItemDetail-card24">
+      <ion-item id="marketplaceItemDetail-list-item27">{{storeItem.name}}</ion-item>
+      <div class=" item item-image">
+        <img src="img/kL8OcKlLRHuEmLRHQE8Q_icon_orange_handcart.png" style="display: block; width: auto; height: 100px; margin-left: auto; margin-right: auto;" ng-show="storeItem.img_url == null">
+      </div>
+      <div class=" item item-image">
+        <img src="{{storeItem.img_url}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;" ng-show="storeItem.img_url != null">
+      </div>
+      <input id="itemImage" type="file" accept="image/*;capture=camera" style="margin: 1% 1% 1% 3%;">
+      <button id="marketplaceItemDetail-button40" ng-click="replaceImage()" class="button button-stable button-small button-block">Upload new image</button>
+      <div class="item item-body" id="marketplaceItemDetail-list-item-container4">
+        <div id="marketplaceItemDetail-markdown30" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">
+            <strong>Kid price:</strong> {{storeItem.price_kid}}</p>
+
+          <p style="color:#000000;">
+            <strong>Parent price:</strong>
+            {{storeItem.price_actual}}</p>
+
+          <p style="color:#000000;">
+            <strong>Description:</strong> {{storeItem.description}}</p>
+
+          <p style="color:#000000;">
+            <strong>Category:</strong>
+            {{storeItem.category}}</p>
+        </div>
+      </div>
+      <button id="marketplaceItemDetail-button38" ng-click="showModal()" style="border-radius:0px 0px 0px 0px;" class="button button-positive button-block icon-left ion-edit">Update item</button>
+      <button id="marketplaceItemDetail-button36" ng-show="storeItem.status!='Active'" ng-click="toggleFinished()" style="border-radius:0px 0px 0px 0px;" class="button button-balanced button-block icon-left ion-android-cart">Add to Marketplace</button>
+      <button id="marketplaceItemDetail-button37" ng-show="storeItem.status==&quot;Active&quot;" ng-click="toggleFinished()" style="border-radius:0px 0px 0px 0px;" class="button button-assertive button-block icon-left ion-alert">Remove from Marketplace</button>
+    </div>
+  </ion-content>
+</ion-view>

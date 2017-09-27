@@ -1,0 +1,27 @@
+<ion-view title="Signup with E-mail" id="page3" style="background-color:#000000;">
+  <ion-content padding="true" style="background: url(img/LZQmOkTFyDmWee7NCHCQ_bg_moon_with_alien.png) no-repeat center;background-size:cover;" class="has-header">
+    <form id="signupWithEMail-form1" class="list">
+      <ion-list id="signupWithEMail-list1">
+        <label class="item item-input field_name marginTop10" id="signupWithEMail-input1" name="name">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="Full name" ng-model="data.name">
+        </label>
+        <label class="item item-input marginTop1 field_email" id="signupWithEMail-input2" name="email">
+          <span class="input-label">E-mail</span>
+          <input type="email" placeholder="E-mail" ng-model="data.email">
+        </label>
+        <label class="item item-input marginTop1 field_password" id="signupWithEMail-input3" name="password">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="Password" ng-model="data.password">
+        </label>
+      </ion-list>
+      <button id="signupWithEMail-button7" ng-click="createUser()" style="color:#FFFFFF;" class="button button-royal button-large button-block fredoka">Sign up</button>
+    </form>
+    <div id="signupWithEMail-markdown5" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#FFFFFF;">We won't send you a bazillion e-mails.</p>
+    </div>
+    <div id="signupWithEMail-markdown6" style="text-align:center;" class="show-list-numbers-and-dots marginTop5">
+      <p style="color:#E74C3C;font-size:17px;">{{data.error}}</p>
+    </div>
+  </ion-content>
+</ion-view>

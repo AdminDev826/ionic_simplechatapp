@@ -1,0 +1,31 @@
+<ion-view title="Add a Kid" id="page18">
+  <ion-content padding="true" style="background: url(img/38MWyNvBRSWr1HBLyf6i_bg_sky_grass.png) no-repeat center;background-size:cover;" class="has-header">
+    <form id="addAKid-form12" class="list" ng-submit="addKid()">
+      <ion-item class="item-divider fredoka" id="addAKid-list-item-divider10"> Kid username</ion-item>
+      <label class="item item-input" id="addAKid-input15" name="kidusername">
+        <input type="text" placeholder="SuperAwesomeKid" ng-model="data.kidusername" required="required">
+      </label>
+      <ion-item class="item-divider fredoka marginTop1" id="addAKid-list-item-divider11"> Top secret pin code</ion-item>
+      <label class="item item-input" id="addAKid-input16" name="kidpin">
+        <input type="number" placeholder="1234" ng-model="data.kidpin" max="9999" min="1000" required="required">
+      </label>
+      <ion-item class="item-divider fredoka marginTop1" id="addAKid-list-item-divider12"> Grade level</ion-item>
+      <label class="item item-select center_select" id="addAKid-select8" name="kidgrade">
+        <span class="input-label"></span>
+        <select ng-model="data.kidgrade">
+          <option>Pre-K (under 5)</option>
+          <option>Kindergarten (5-6)</option>
+          <option>1st Grade (6-7)</option>
+          <option>2nd Grade (7-8)</option>
+          <option>3rd Grade (8-9)</option>
+          <option>4th Grade (9-10)</option>
+          <option>5th Grade (10-11)</option>
+          <option>6th Grade (11-12)</option>
+          <option>7th Grade (12-13)</option>
+          <option>8th Grade (13-14)</option>
+        </select>
+      </label>
+    </form>
+    <button id="addAKid-button14" ng-click="addKid()" style="border-radius:6px 6px 6px 6px;" class="button button-positive button-block icon-left ion-person-add fredoka">Save</button>
+  </ion-content>
+</ion-view>

@@ -2,5 +2,14 @@
   "name": "popchart",
   "app_id": "e4c3bffb",
   "type": "ionic1",
-  "integrations": {}
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "gulpStartupTasks": ["sass", "watch"]
 }

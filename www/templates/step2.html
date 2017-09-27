@@ -1,0 +1,67 @@
+<ion-view title="Step 2" id="page13">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-icon icon No Icon"> Skip</button>
+  </ion-nav-buttons>
+  <ion-content padding="true" style="background: url(img/QmUz4HRNmcN5shXs5ZAo_bg_sky_only.png) no-repeat center;background-size:cover;" class="has-header">
+    <h3 id="step2-heading8" style="color:#000000;text-align:center;" class="clearfix fredoka marginTop5">Add a Chore</h3>
+    <form id="step2-form11" class="list" ng-submit="addKid()">
+      <ion-item class="item-divider fredoka" id="step2-list-item-divider4"> Chore name</ion-item>
+      <label class="item item-input" id="step2-input10" name="choreName">
+        <input type="text" placeholder="" ng-model="data.kidusername" required="required">
+      </label>
+      <ion-item class="item-divider fredoka marginTop1" id="step2-list-item-divider5"> Points reward</ion-item>
+      <label class="item item-input halfWidth" id="step2-input12" name="pointsReward">
+        <input type="number" placeholder="1" ng-model="data.kidpin" max="5" min="1" required="required">
+      </label>
+      <div id="step2-button-bar1" class="button-bar marginTop5">
+        <button id="step2-button17" class="button button-energized button-block icon-left ion-settings fredoka">Options</button>
+        <button id="step2-button18" class="button button-stable button-block icon-left ion-calendar fredoka">Schedule</button>
+      </div>
+    </form>
+    <div id="step2-container11" class="choreOptionsContainer">
+      <form id="step2-form13" class="list">
+        <ion-toggle toggle-class="toggle-positive" ng-checked="true" id="step2-toggle1" class="fredoka">Chore status</ion-toggle>
+        <label class="item item-select fredoka" id="step2-select5">
+          <span class="input-label">Urgency</span>
+          <select>
+            <option>Normal priority</option>
+            <option>High priority</option>
+            <option>Low priority</option>
+          </select>
+        </label>
+        <label class="item item-input fredoka" id="step2-textarea1">
+          <span class="input-label">Description</span><textarea placeholder="Check pups' water"></textarea></label>
+      </form>
+    </div>
+    <div class="spacer" style="height: 30px;"></div>
+    <div id="step2-container12" class="choreScheduleContainer">
+      <form id="step2-form15" class="list">
+        <ion-toggle toggle-class="toggle-positive" id="step2-toggle2" class="fredoka">Is repeatable</ion-toggle>
+        <label class="item item-select fredoka" id="step2-select7">
+          <span class="input-label">Interval</span>
+          <select>
+            <option>Daily</option>
+            <option>Weekdays only</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Annually</option>
+          </select>
+        </label>
+        <ion-item class="item-divider" id="step2-list-item-divider8"> Schedule for a date range</ion-item>
+        <label class="item item-input fredoka" id="step2-input13">
+          <span class="input-label">Start date</span>
+          <input type="text" placeholder="mm/dd/yyyy">
+        </label>
+        <label class="item item-input fredoka" id="step2-input14">
+          <span class="input-label">End date</span>
+          <input type="text" placeholder="mm/dd/yyyy">
+        </label>
+      </form>
+    </div>
+    <div class="spacer" style="height: 30px;"></div>
+    <div id="step2-button-bar2" class="button-bar">
+      <button id="step2-button16" class="button button-positive button-block">Skip</button>
+      <button id="step2-button19" class="button button-positive button-block">Save</button>
+    </div>
+  </ion-content>
+</ion-view>

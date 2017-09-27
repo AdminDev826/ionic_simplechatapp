@@ -1,0 +1,37 @@
+<ion-view title="{{data.pageTitle}}" id="page23" style="background-color:#C0DBED;">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="pointsByKid-card21">
+      <ion-item class="item-avatar" id="pointsByKid-list-item17" ng-src="{{data.kidavatar_url}}">
+        <h2>{{data.kid_un}}</h2>
+      </ion-item>
+      <div class="item item-body" id="pointsByKid-list-item-container2">
+        <div id="pointsByKid-markdown26" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;font-size:15px;">
+            <strong>Balance:</strong> {{ data.kidvcBalanceSnapshot }}</p>
+        </div>
+      </div>
+      <button id="pointsByKid-button15" ng-click="makeDeposit()" style="color:#000000;border-radius:0px 0px 0px 0px;" class="button button-balanced button-block icon-left ion-android-add-circle">Deposit 1 {{data.kid_vc_name}}</button>
+      <form id="pointsByKid-form14" class="list">
+        <label class="item item-input" id="pointsByKid-input17" name="reason">
+          <span class="input-label">Deposit reason</span>
+          <input type="text" placeholder="optional" ng-model="data.reason">
+        </label>
+      </form>
+      <button id="pointsByKid-button20" ng-click="confirmWithdraw()" style="border-radius:0px 0px 0px 0px;" class="button button-assertive button-block icon-left ion-android-remove-circle">Withdraw 1 {{data.kid_vc_name}}</button>
+      <form id="pointsByKid-form16" class="list">
+        <label class="item item-input" id="pointsByKid-input19" name="reason2">
+          <span class="input-label">Withdraw reason</span>
+          <input type="text" placeholder="optional" ng-model="data.reason2">
+        </label>
+      </form>
+    </div>
+    <ion-list id="pointsByKid-list11" class="marginBottom5">
+      <ion-item class="item-divider" id="pointsByKid-list-item-divider17"> Recent transactions</ion-item>
+      <ion-item class="item-icon-right" id="pointsByKid-list-item26" ng-repeat="item in items">
+        <em>{{item.datetime_start | date:'medium'}}</em>
+        <br>{{item.description}}
+        <i class="icon ion-ios-information icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
