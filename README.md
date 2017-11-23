@@ -11,6 +11,9 @@
 
 ## Main Features
 
+#### *Chat feature
+#### *Social media integration
+
 ### Sources
 
 ### Report issue
