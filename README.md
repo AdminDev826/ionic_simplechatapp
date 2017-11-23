@@ -1,26 +1,19 @@
-Ionic App Base
-==============
+# Android Drive Monitor App
 
-A starting project for Ionic that optionally supports using custom SCSS.
+[![Gitter](	https://img.shields.io/gitter/room/nwjs/nw.js.svg)]()
+[![Ionic](https://img.shields.io/badge/Ionic-gulp-brightgreen.svg)](https://ionicframework.com/)
 
-## Using this project
+## Screenshots
+[<img src="screenshots/1.png" width="150" />]()
+[<img src="screenshots/2.png" width="150" />]()
+[<img src="screenshots/3.png" width="150" />]()
+[<img src="screenshots/4.png" width="150" />]()
 
-We recommend using the [Ionic CLI](https://github.com/ionic-team/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
+## Main Features
 
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
+### Sources
 
-```bash
-$ npm install -g ionic cordova
-```
+### Report issue
+Did you encounter bugs? Report them [here](https://github.com/AdminDev826/ionic_simplechatapp/issues). The more relevant information you provide the easier and faster it can be resolved.
 
-Then run:
-
-```bash
-$ ionic start myProject tabs --type=ionic1
-```
-
-More info on this can be found on the Ionic [Getting Started](https://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/ionic-team/ionic-cli) repo.
-
-## Issues
-
-Issues have been disabled on this repo. If you do find an issue or have a question, consider posting it on the [Ionic Forum](https://forum.ionicframework.com/). If there is truly an error, follow our guidelines for [submitting an issue](https://ionicframework.com/submit-issue/) to the main Ionic repository.
+## License
